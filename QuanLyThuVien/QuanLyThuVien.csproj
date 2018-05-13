@@ -113,6 +113,36 @@
     <Compile Include="GUI\UCs\ucFrmQLPhieuTra.Designer.cs">
       <DependentUpon>ucFrmQLPhieuTra.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLSach.Designer.cs">
+      <DependentUpon>ucFrmQLSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLThanhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLThanhVien.Designer.cs">
+      <DependentUpon>ucFrmQLThanhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmSachDangMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmSachDangMuon.Designer.cs">
+      <DependentUpon>ucFrmSachDangMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmThanhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmThanhVien.Designer.cs">
+      <DependentUpon>ucFrmThanhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmTimKiemSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmTimKiemSach.Designer.cs">
+      <DependentUpon>ucFrmTimKiemSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Forms\fLogin.resx">
