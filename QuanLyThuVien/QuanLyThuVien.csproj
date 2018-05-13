@@ -37,7 +37,9 @@
     <Reference Include="DevExpress.Utils.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,10 +65,61 @@
     <Compile Include="GUI\Forms\fTableManage.Designer.cs">
       <DependentUpon>fTableManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UCs\ucFrmDangMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDangMuon.Designer.cs">
+      <DependentUpon>ucFrmDangMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDatra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDatra.Designer.cs">
+      <DependentUpon>ucFrmDatra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDoiMatKhau.Designer.cs">
+      <DependentUpon>ucFrmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmGioiThieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmGioiThieu.Designer.cs">
+      <DependentUpon>ucFrmGioiThieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmHuongDanSuDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmHuongDanSuDung.Designer.cs">
+      <DependentUpon>ucFrmHuongDanSuDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmLichSuMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmLichSuMuon.Designer.cs">
+      <DependentUpon>ucFrmLichSuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLPhieuMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLPhieuMuon.Designer.cs">
+      <DependentUpon>ucFrmQLPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLPhieuTra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLPhieuTra.Designer.cs">
+      <DependentUpon>ucFrmQLPhieuTra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Forms\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCs\ucFrmGioiThieu.resx">
+      <DependentUpon>ucFrmGioiThieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -88,12 +141,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\HDSD.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\HDSD.pdf" />
     <None Include="Resources\hvktqs_logo.jpg" />
   </ItemGroup>
   <ItemGroup>
