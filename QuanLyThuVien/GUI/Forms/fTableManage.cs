@@ -249,7 +249,7 @@ namespace QuanLyThuVien.GUI.Forms
 
         private void fTableManage_FormClosed(object sender, FormClosedEventArgs e)
         {
-           
+            fLg.Close();
         }
 
         private void fTableManage_Load(object sender, EventArgs e)
