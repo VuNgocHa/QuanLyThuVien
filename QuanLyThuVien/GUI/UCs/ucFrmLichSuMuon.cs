@@ -11,11 +11,14 @@ using DevExpress.XtraEditors;
 
 namespace QuanLyThuVien.GUI.UCs
 {
-    public partial class ucFrmLichSuMuon : DevExpress.XtraEditors.XtraUserControl
+    public partial class ucFrmSachDaTra : DevExpress.XtraEditors.XtraUserControl
     {
-        public ucFrmLichSuMuon()
+        LichSuMuon_BUS lsmBus = new LichSuMuon_BUS();
+        private string tdn;
+        public ucFrmLichSuMuon(string _tdn)
         {
             InitializeComponent();
+            tdn = _tdn;
         }
 
         private void txtTimTenSach_EditValueChanged(object sender, EventArgs e)

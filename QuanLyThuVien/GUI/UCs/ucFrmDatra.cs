@@ -11,8 +11,8 @@ using DevExpress.XtraEditors;
 
 namespace QuanLyThuVien.GUI.UCs
 {
-    public partial class ucFrmDatra : DevExpress.XtraEditors.XtraUserControl
-    {
+    public partial class ucFrmDatra : UserControl
+    { 
         public ucFrmDatra()
         {
             InitializeComponent();

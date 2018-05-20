@@ -145,7 +145,7 @@ namespace QuanLyThuVien.GUI.Forms
         private void barBtnDaMuon_ItemClick(object sender, ItemClickEventArgs e)
         {
             panelCha.Controls.Clear();
-            ucFrmDaTra frm = new ucFrmDaTra();
+            ucFrmDatra frm = new ucFrmDatra();
             frm.Dock = System.Windows.Forms.DockStyle.Fill;
             panelCha.Controls.Add(frm);
         }
@@ -242,7 +242,7 @@ namespace QuanLyThuVien.GUI.Forms
         private void nBI_TKDT_LinkClicked(object sender, NavBarLinkEventArgs e)
         {
             panelCha.Controls.Clear();
-            ucFrmDatra frm = new ucFrmDaTra();
+            ucFrmDatra frm = new ucFrmDatra();
             frm.Dock = System.Windows.Forms.DockStyle.Fill;
             panelCha.Controls.Add(frm);
         }
