@@ -32,14 +32,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraPdfViewer.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>E:\QuanLyThuVien-20180521T012247Z-001\QuanLyThuVien\bin\Debug\DevExpress.Data.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>E:\QuanLyThuVien-20180521T012247Z-001\QuanLyThuVien\bin\Debug\DevExpress.Printing.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>E:\QuanLyThuVien-20180521T012247Z-001\QuanLyThuVien\bin\Debug\DevExpress.Utils.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>E:\QuanLyThuVien-20180521T012247Z-001\QuanLyThuVien\bin\Debug\DevExpress.XtraBars.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>E:\QuanLyThuVien-20180521T012247Z-001\QuanLyThuVien\bin\Debug\DevExpress.XtraEditors.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>E:\QuanLyThuVien-20180521T012247Z-001\QuanLyThuVien\bin\Debug\DevExpress.XtraGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>E:\QuanLyThuVien-20180521T012247Z-001\QuanLyThuVien\bin\Debug\DevExpress.XtraNavBar.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>E:\QuanLyThuVien-20180521T012247Z-001\QuanLyThuVien\bin\Debug\DevExpress.XtraPdfViewer.v17.2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +69,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DocGia_BUS.cs" />
+    <Compile Include="BUS\Sach_BUS.cs" />
+    <Compile Include="BUS\ThanhVien_BUS.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DocGia_DAO.cs" />
+    <Compile Include="DAO\Sach_DAO.cs" />
+    <Compile Include="DAO\ThanhVien_DAO.cs" />
+    <Compile Include="DTO\DocGia.cs" />
+    <Compile Include="DTO\Sach.cs" />
+    <Compile Include="DTO\ThanhVien.cs" />
     <Compile Include="GUI\Forms\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,5 +274,9 @@
   <ItemGroup>
     <None Include="Resources\webicons_RPL2-05.png" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
