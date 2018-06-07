@@ -1,4 +1,7 @@
-﻿using System;
+﻿using QuanLyThuVien.BUS;
+using QuanLyThuVien.DTO;
+using System;
+using System.Windows.Forms;
 
 namespace QuanLyThuVien.GUI.Forms
 {
