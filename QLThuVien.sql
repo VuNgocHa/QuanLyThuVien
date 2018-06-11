@@ -1,8 +1,10 @@
 ﻿
 create database QLThuVien
-go
+GO
+
 use QLThuVien
-go
+GO
+
 
 create table DOCGIA
 (
