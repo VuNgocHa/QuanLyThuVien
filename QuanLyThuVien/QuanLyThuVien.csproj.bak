@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF6C7EEF-725B-4D4A-9B79-13477DE7564D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyThuVien</RootNamespace>
+    <AssemblyName>QuanLyThuVien</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\QLThuVien(Ha)\Goc\QuanLyThuVien\bin\Debug\DevExpress.Data.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\QLThuVien(Ha)\Goc\QuanLyThuVien\bin\Debug\DevExpress.Printing.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\QLThuVien(Ha)\Goc\QuanLyThuVien\bin\Debug\DevExpress.Utils.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\QLThuVien(Ha)\Goc\QuanLyThuVien\bin\Debug\DevExpress.XtraBars.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\QLThuVien(Ha)\Goc\QuanLyThuVien\bin\Debug\DevExpress.XtraEditors.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\QLThuVien(Ha)\Goc\QuanLyThuVien\bin\Debug\DevExpress.XtraGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\QLThuVien(Ha)\Goc\QuanLyThuVien\bin\Debug\DevExpress.XtraNavBar.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\QLThuVien(Ha)\Goc\QuanLyThuVien\bin\Debug\DevExpress.XtraPdfViewer.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\MatKhau_BUS.cs" />
+    <Compile Include="BUS\ThanhVien_BUS.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\MatKhau_DAO.cs" />
+    <Compile Include="DAO\ThanhVien_DAO.cs" />
+    <Compile Include="DTO\DocGia.cs" />
+    <Compile Include="DTO\ThanhVien.cs" />
+    <Compile Include="GUI\Forms\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\fTableManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\fTableManage.Designer.cs">
+      <DependentUpon>fTableManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDangMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDangMuon.Designer.cs">
+      <DependentUpon>ucFrmDangMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDatra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDatra.Designer.cs">
+      <DependentUpon>ucFrmDatra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmDoiMatKhau.Designer.cs">
+      <DependentUpon>ucFrmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmGioiThieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmGioiThieu.Designer.cs">
+      <DependentUpon>ucFrmGioiThieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmHuongDanSuDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmHuongDanSuDung.Designer.cs">
+      <DependentUpon>ucFrmHuongDanSuDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmLichSuMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmLichSuMuon.Designer.cs">
+      <DependentUpon>ucFrmLichSuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLPhieuMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLPhieuMuon.Designer.cs">
+      <DependentUpon>ucFrmQLPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLPhieuTra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLPhieuTra.Designer.cs">
+      <DependentUpon>ucFrmQLPhieuTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLSach.Designer.cs">
+      <DependentUpon>ucFrmQLSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLThanhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmQLThanhVien.Designer.cs">
+      <DependentUpon>ucFrmQLThanhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmSachDangMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmSachDangMuon.Designer.cs">
+      <DependentUpon>ucFrmSachDangMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmThanhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmThanhVien.Designer.cs">
+      <DependentUpon>ucFrmThanhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmTimKiemSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCs\ucFrmTimKiemSach.Designer.cs">
+      <DependentUpon>ucFrmTimKiemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Forms\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCs\ucFrmGioiThieu.resx">
+      <DependentUpon>ucFrmGioiThieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HDSD.pdf" />
+    <None Include="Resources\hvktqs_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mta.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_Library-256_400x400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\child.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconlogout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-khtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MuonSach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange-about-512.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register_log_in_user_login_session_authorize_open_account_access_key-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_book-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_access-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_group_man_people_users_male-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-icon--16121-large[1].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-info-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webicons_RPL2-05.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
