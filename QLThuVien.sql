@@ -8,6 +8,7 @@ GO
 
 create table DOCGIA
 (
+
 	MaDocGia nchar(10),
 	TenDangNhap nchar(30),
 	HoTen nchar(30),
