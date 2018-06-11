@@ -8,7 +8,7 @@ namespace QuanLyThuVien.DTO
 {
     class DocGia
     {
-        public string MaDocGia { get; set; }
+        public string MaDocGia{ get; set; }
         public string TenDangNhap { get; set; }
         public string HoTen { get; set; }
         public string GioiTinh { get; set; }

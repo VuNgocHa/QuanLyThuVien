@@ -1,11 +1,10 @@
-﻿using QuanLyThuVien.DAO;
-using QuanLyThuVien.DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using QuanLyThuVien.DAO;
+using QuanLyThuVien.DTO;
 namespace QuanLyThuVien.BUS
 {
     class ThanhVien_BUS
@@ -29,5 +28,6 @@ namespace QuanLyThuVien.BUS
         {
             tvDao.Update(_dg);
         }
+
     }
 }
