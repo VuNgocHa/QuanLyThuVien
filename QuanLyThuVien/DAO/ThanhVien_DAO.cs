@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using QuanLyThuVien.DTO;
 namespace QuanLyThuVien.DAO
 {
-    class ThanhVien_DAO : DataProvider
+    class ThanhVien_DAO: DataProvider
     {
         public bool login(string _tk, string _mk)
         {
@@ -20,7 +20,7 @@ namespace QuanLyThuVien.DAO
                 return false;
             Random rdm = new Random();
             _tv.MaDocGia = rdm.Next(0, 1000).ToString();
-            while (GetData("select* from ACCOUNT where MaDocGia = '" + _tv.TenDangNhap + "'").Rows.Count > 0)
+            while(GetData("select* from ACCOUNT where MaDocGia = '" + _tv.TenDangNhap + "'").Rows.Count > 0)
             {
                 _tv.MaDocGia = rdm.Next(0, 1000).ToString();
             }
